@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SalamX Limited</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans bg-gray-50 text-gray-800">
+
+  <!-- Header -->
+  <header class="fixed top-0 left-0 right-0 bg-white shadow-md z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+      <!-- Logo -->
+      <div class="flex items-center space-x-3">
+        <img src="logo.png" alt="SalamX Logo" class="h-10">
+        <div class="flex flex-col">
+          <span class="font-bold text-xl text-blue-700">SalamX Limited</span>
+          <span id="datetime" class="text-sm text-gray-500"></span>
+        </div>
+      </div>
+      <!-- Desktop Menu -->
+      <nav class="hidden md:flex space-x-6 font-medium">
+        <a href="#home" class="hover:text-blue-600">Home</a>
+        <a href="#history" class="hover:text-blue-600">History</a>
+        <a href="#about" class="hover:text-blue-600">About</a>
+        <a href="#goals" class="hover:text-blue-600">Goals</a>
+        <a href="#projects" class="hover:text-blue-600">Projects</a>
+        <a href="#services" class="hover:text-blue-600">Services</a>
+        <a href="#contact" class="hover:text-blue-600">Contact</a>
+      </nav>
+      <!-- Mobile Menu Button -->
+      <button id="menu-btn" class="md:hidden flex flex-col space-y-1">
+        <span class="w-6 h-0.5 bg-gray-700"></span>
+        <span class="w-6 h-0.5 bg-gray-700"></span>
+        <span class="w-6 h-0.5 bg-gray-700"></span>
+      </button>
+    </div>
+    <!-- Mobile Menu -->
+    <nav id="mobile-menu" class="hidden flex flex-col space-y-4 bg-white px-6 py-4 shadow-md md:hidden">
+      <a href="#home" class="hover:text-blue-600">Home</a>
+      <a href="#history" class="hover:text-blue-600">History</a>
+      <a href="#about" class="hover:text-blue-600">About</a>
+      <a href="#goals" class="hover:text-blue-600">Goals</a>
+      <a href="#projects" class="hover:text-blue-600">Projects</a>
+      <a href="#services" class="hover:text-blue-600">Services</a>
+      <a href="#contact" class="hover:text-blue-600">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="relative bg-gradient-to-r from-blue-700 to-cyan-500 text-white text-center py-32 mt-20">
+    <div class="max-w-3xl mx-auto px-6">
+      <h1 class="text-5xl font-extrabold mb-6">SalamX Limited</h1>
+      <p class="text-lg mb-8">Pioneering Islamic-inspired technology solutions for the digital future.</p>
+      <a href="#contact" class="px-8 py-3 bg-white text-blue-700 font-semibold rounded-full shadow-md hover:bg-gray-100">Contact Us</a>
+    </div>
+  </section>
+
+  <!-- History Section -->
+  <section id="history" class="max-w-6xl mx-auto px-6 py-20">
+    <h2 class="text-4xl font-bold mb-8 text-center text-blue-700">Our History</h2>
+    <p class="text-lg leading-relaxed text-center max-w-4xl mx-auto text-gray-700">
+      <strong>SalamX Limited</strong> was founded as a parent company for innovative platforms rooted in 
+      <strong>Qur’an and Hadith</strong> principles. Its first major project, <strong>SalamChat (SChat)</strong>, promotes 
+      safe and respectful communication online. SalamX balances modern technology with spiritual guidance, ensuring 
+      honesty, fairness, and integrity in every solution.
+    </p>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="bg-gray-50 py-20 px-6">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-8 text-blue-700">About SalamX Limited</h2>
+      <p class="text-lg leading-relaxed max-w-3xl mx-auto text-gray-700">
+        We are a CAC-registered technology company based in Sokoto, Nigeria, led by 
+        <strong>Umar Bello Tafida</strong>, CCNA, ACA — Co-founder and CEO. Our vision is to build Africa’s leading 
+        digital ecosystem, creating transformative and ethical technology grounded in Islamic values.
+      </p>
+    </div>
+  </section>
+
+  <!-- Goals Section -->
+  <section id="goals" class="bg-gray-100 py-20 px-6">
+    <h2 class="text-4xl font-bold mb-12 text-center text-blue-700">Our Goals & Ambition</h2>
+    <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+      <div class="p-8 bg-white rounded-xl shadow hover:shadow-lg transition">
+        <h3 class="font-semibold text-xl mb-3 text-blue-800">E-commerce Expansion</h3>
+        <p>Launching SalamX E-commerce — a marketplace inspired by Alibaba, rooted in fair-trade ethics.</p>
+      </div>
+      <div class="p-8 bg-white rounded-xl shadow hover:shadow-lg transition">
+        <h3 class="font-semibold text-xl mb-3 text-blue-800">E-wallet & Currency Exchange</h3>
+        <p>Developing a secure digital wallet for financial inclusion, guided by Qur’an and Hadith.</p>
+      </div>
+      <div class="p-8 bg-white rounded-xl shadow hover:shadow-lg transition">
+        <h3 class="font-semibold text-xl mb-3 text-blue-800">Islamic Tech Innovation</h3>
+        <p>Ensuring SalamChat, SalamX Cloud, and other projects align with values of trust and justice.</p>
+      </div>
+      <div class="p-8 bg-white rounded-xl shadow hover:shadow-lg transition">
+        <h3 class="font-semibold text-xl mb-3 text-blue-800">Global Ambition</h3>
+        <p>Becoming a trusted global leader in AI, Cloud, and Cybersecurity by 2030.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-20 px-6">
+    <h2 class="text-4xl font-bold mb-12 text-center text-blue-700">Our Projects & Initiatives</h2>
+    <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div class="p-8 bg-blue-50 rounded-xl shadow hover:shadow-lg transition">
+        <h3 class="font-semibold text-xl mb-3 text-blue-800">SalamChat (SChat)</h3>
+        <p>A faith-based social platform for authentic, safe, and respectful communication.</p>
+      </div>
+      <div class="p-8 bg-blue-50 rounded-xl shadow hover:shadow-lg transition">
+        <h3 class="font-semibold text-xl mb-3 text-blue-800">S Cloud Training</h3>
+        <p>Empowering youth with cloud and networking knowledge inspired by Cisco and AWS.</p>
+      </div>
+      <div class="p-8 bg-blue-50 rounded-xl shadow hover:shadow-lg transition">
+        <h3 class="font-semibold text-xl mb-3 text-blue-800">SalamX E-Commerce</h3>
+        <p>Fair and transparent trade platform designed with halal business practices.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="bg-gray-100 py-20 px-6">
+    <h2 class="text-4xl font-bold mb-12 text-center text-blue-700">Our Services</h2>
+    <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div class="p-8 bg-white rounded-xl shadow hover:shadow-lg transition">
+        <h3 class="font-semibold text-xl mb-3 text-blue-800">Digital Platforms</h3>
+        <p>Providing ethical platforms in communication, e-commerce, and finance.</p>
+      </div>
+      <div class="p-8 bg-white rounded-xl shadow hover:shadow-lg transition">
+        <h3 class="font-semibold text-xl mb-3 text-blue-800">Cloud & AI</h3>
+        <p>AI-driven, cloud-powered solutions that scale securely with integrity.</p>
+      </div>
+      <div class="p-8 bg-white rounded-xl shadow hover:shadow-lg transition">
+        <h3 class="font-semibold text-xl mb-3 text-blue-800">Training & Innovation</h3>
+        <p>Workshops and academies emphasizing Islamic ethics in modern tech.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 px-6 max-w-4xl mx-auto text-center">
+    <h2 class="text-4xl font-bold mb-6 text-blue-700">Contact Us</h2>
+    <p class="mb-6 text-lg text-gray-700">We’d love to hear from you. Reach us at:</p>
+    <div class="space-y-2 text-lg text-gray-700">
+      <p><strong>Email:</strong> salamxlimited@gmail.com</p>
+      <p><strong>Address:</strong> Rabah, Sokoto State, Nigeria</p>
+      <p><strong>Co-founder & CEO:</strong> Umar Bello Tafida, CCNA, ACA</p>
+    </div>
+    <div class="flex justify-center space-x-6 mt-8">
+      <a href="https://facebook.com/umarbellotafida" target="_blank" class="text-blue-600 hover:underline">Facebook</a>
+      <a href="https://x.com/umarbellotafida" target="_blank" class="text-gray-700 hover:underline">Twitter</a>
+      <a href="https://wa.me/8165871406" target="_blank" class="text-green-600 hover:underline">WhatsApp</a>
+    </div>
+    <a href="mailto:salamxlimited@gmail.com" class="mt-10 inline-block px-8 py-3 bg-blue-600 text-white font-semibold rounded-full shadow hover:bg-blue-700">Send Email</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white text-center py-6">
+    <p>&copy; 2025 SalamX Limited. All rights reserved. | Guided by Qur’an & Sunnah</p>
+  </footer>
+
+  <script>
+    // Toggle Mobile Menu
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Live Date & Time
+    function updateDateTime() {
+      const now = new Date();
+      document.getElementById('datetime').innerText =
+        now.toLocaleString('en-US', { 
+          weekday: 'long', year: 'numeric', month: 'long', 
+          day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit' 
+        });
+    }
+    setInterval(updateDateTime, 1000);
+    updateDateTime();
+  </script>
+
+</body>
+</html>;
